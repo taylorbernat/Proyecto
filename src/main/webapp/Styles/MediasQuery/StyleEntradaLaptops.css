@@ -1,0 +1,214 @@
+@media (min-width: 1024px) and (max-width: 1440px){   
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    body {
+
+        background-color: #F5F0E1;
+        height: 100vh;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+    }
+
+    /* ---------------------- ASIDE ---------------------- */
+    .general {
+        width: 15%;
+        height: 100%;
+        background-color: white;
+        border-right: 3px solid #005d00;
+        padding: 10px;
+    }
+
+    .general h2 {
+        background-color: white;
+        height: 10%;
+        text-align: center;
+        font-family: 'Bungee Inline', sans-serif;
+        border: 2px solid black;
+    }
+    .general nav{
+        height: 89%;
+    }
+    .general nav form{
+        height: 100%;
+    }
+    .general ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 100%;
+        gap: 1%;
+    }
+
+    .general li {
+        background-color: #5F9334;
+        margin: 1px 0;
+        width:100%;
+        height: 12%;
+        display: flex;
+        align-items: center;
+        border-left: 5px solid #005d00;
+        cursor: pointer;
+        color: white;
+        font-size: 14px;
+    }
+    .ButtonCarruselCS{
+        border: 2px solid black;
+        width: 100%;
+        height: 100%;
+        background:none;
+    }
+
+
+    .icono {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    /* ---------------------- MAIN ---------------------- */
+    #contenidoprincipal {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #7C8551;
+        border-right: none;
+        background-color: #fff;
+        align-self: center;
+        justify-self: end;
+        width: 84%;
+        height: 95%;
+        padding: 20px;
+        overflow-y: scroll;
+    }
+
+    /* ORDENAR */
+    .ordenar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .ordenar-btn {
+        background-color: #c9d9b4;
+        width: 18%;
+        height: 60%;
+        color: white;
+        font-family: 'Bungee Inline', sans-serif;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 30px;
+        border: none;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .ordenar-input {
+        padding: 10px;
+        background-color: #c9d9b4;
+        border: 3px solid #7C8551;
+        width: 250px;
+        border-radius: 10px;
+    }
+
+    /* ---------- CATEGORÍAS ----------*/
+    .categorias {
+        margin-bottom: 0%;
+        display: flex;
+        align-items: end;
+        width: 100%;
+        height: 8%;
+    }
+
+    .categoria {
+        background-color: #53703C;
+        color: white;
+        border: none;
+        height: 75%;
+        width: 7%;
+        padding: 8px 16px;
+        margin-right: 5px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 5px 5px 0px 0px;
+        font-weight: bold;
+        transition: height 0.5s;
+    }
+    .categoria:hover{
+        height:100%;
+    }
+    /* ---------------------- TABLA ---------------------- */
+    #formulariosTablas{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    table {
+        width: 100%;
+        height: 10vh;
+        border-collapse: collapse;
+        border: 2px solid #4a6b3f;
+    }
+    thead{
+        height: 10%;
+    }
+    #contentGenTable{
+        height: 80%;
+    }
+    .rowToble{
+        height: 5vh;
+    }
+    td {
+        border: 3px solid #53703C;
+    }
+
+    th {
+        border: 3px solid #53703C;
+        background-color: #53703C;
+        color: white;
+        font-weight: bold;
+
+
+    }
+
+    input.contentTable, select.contentTable {
+        border: none;
+        background: transparent;
+        outline: none;
+        width: 100%;
+        height: 5vh;
+        font-family: inherit;
+        font-size: inherit;
+        padding: 4px;
+    }
+
+    input.contentTable:focus, select.contentTable:focus {
+        background-color: #F5F0E1;
+        border: 1px solid #66f;
+    }
+    /*--------------------------buton final-----------------------*/
+    #casillaBotonEnviar{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        justify-content: flex-end;
+        align-items:center;
+
+    }
+    #botonEnviar{
+        width: 10%;
+        height: 70%;
+    }
+}

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+
+    background-color: #F5F0E1;
+    height: 100vh;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* ---------------------- ASIDE ---------------------- */
+.general {
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-right: 3px solid #005d00;
+    padding: 10px;
+}
+
+.general h2 {
+    background-color: white;
+    height: 10%;
+    text-align: center;
+    font-family: 'Bungee Inline', sans-serif;
+    border: 2px solid black;
+}
+.general nav{
+    height: 89%;
+}
+.general nav form{
+    height: 100%;
+}
+.general ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 100%;
+    gap: 1%;
+}
+
+.general li {
+    background-color: #5F9334;
+    margin: 1px 0;
+    width:100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #005d00;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+}
+.ButtonCarruselCS{
+    border: 2px solid black;
+    width: 100%;
+    height: 100%;
+    background:none;
+}
+
+
+.icono {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* ---------------------- MAIN ---------------------- */
+#contenidoprincipal {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #7C8551;
+    border-right: none;
+    background-color: #fff;
+    align-self: center;
+    justify-self: end;
+    width: 84%;
+    height: 95%;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+/* ORDENAR */
+.ordenar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.ordenar-btn {
+    background-color: #c9d9b4;
+    color: white;
+    font-family: 'Bungee Inline', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    border: none;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.ordenar-input {
+    padding: 10px;
+    background-color: #c9d9b4;
+    border: 3px solid #7C8551;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/*----------------------- Graficos ---------------------*/
+.grafico-contenedor {
+    position: relative;
+    width: 50%;
+    height: 60%;  /* Ajusta este valor según lo que necesites */
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
